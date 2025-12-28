@@ -16,7 +16,10 @@ st.sidebar.title('🏡 Select House features 🏡')
 st.sidebar.image('https://storypick.com/wp-content/uploads/2020/05/giphy.gif')
 all_value = []
 for i in X:
-  ans = st.sidebar.slider(f'Select {i} value')
+  min_value = int(X[i].min())
+  max_value = int(X[i].max())
+  ans = st.sidebar.slider(f'Select {i} value', min_value, max_value)
   all_value.append(ans)
 
-st.write(all_value)
+# st.write(all_value)
+
