@@ -13,7 +13,7 @@ X = df.iloc[:,:-3]
 y = df.iloc[:,-1]
 
 st.sidebar.title('🏡 Select House features 🏡')
-st.sidebar.image('https://storypick.com/wp-content/uploads/2020/05/giphy.gif')
+st.sidebar.image('https://media.tenor.com/piYxNaw_obQAAAAM/residential-electrician-pittsburgh-pittsburgh-electric-companies.gif')
 all_value = []
 for i in X:
   min_value = int(X[i].min())
@@ -42,6 +42,7 @@ msg = f'''House Price is: $ {round(house_price*100000,2)}'''
 st.success(msg)
 
 st.markdown('''**Design and Developed by: Ayush Yadav**''')
+
 
 
 
