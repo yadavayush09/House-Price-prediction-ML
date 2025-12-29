@@ -6,7 +6,7 @@ import time
 from sklearn.datasets import fetch_california_housing
 from sklearn.ensemble import RandomForestRegressor
 st.title('🏠House Price prediction using ML')
-st.image('https://storypick.com/wp-content/uploads/2020/05/giphy.gif')
+st.image('https://media.tenor.com/piYxNaw_obQAAAAM/residential-electrician-pittsburgh-pittsburgh-electric-companies.gif')
 
 df = pd.read_csv('house_data.csv')
 X = df.iloc[:,:-3]
@@ -42,6 +42,7 @@ msg = f'''House Price is: $ {round(house_price*100000,2)}'''
 st.success(msg)
 
 st.markdown('''**Design and Developed by: Ayush Yadav**''')
+
 
 
 
